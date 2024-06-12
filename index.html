@@ -64,19 +64,19 @@
                 customers. Our long history and customer retention ratio has marked us as a successful company in the
                 field of science and innovation.</p>
 
-            <h2>Our Mission</h2>
+            <h2 id="left">Our Mission</h2>
             <p>Mission Point.</p>
 
-            <h2>Our Team</h2>
+            <h2 id="left">Our Team</h2>
             <p>team detai.</p>
 
            
-            <h2>Why Choose Us?</h2>
+            <h2 id="left">Why Choose Us?</h2>
             <p>We are committed to delivering the highest quality in everything we do,
                 from our products to our customer service.
             </p>
 
-            <h2>Join Us on Our Journey</h2>
+            <h2 id="left">Join Us on Our Journey</h2>
             <p>we can create a brighter future, one where your dreams become our mission.</p>
 
             <div class="contact-info">
@@ -93,6 +93,72 @@
             </div>
         </div>
     </div>
+<!-- -----------------------------------------------------------------------------------------  --> 
+<h2>Our Products</h2>
+<div class="categories-container">
+    <div class="category" data-category="Agriculture">Agriculture</div>
+    <div class="category" data-category="Physics">Physics</div>
+    <div class="category" data-category="Chemistry">Chemistry</div>
+    <div class="category" data-category="Science">Science</div>
+    <div class="category" data-category="Civil">Civil</div>
+    <div class="category" data-category="Electrical">Electrical</div>
+    <div class="category" data-category="Math">Math</div>
+    <div class="category" data-category="Astronomy">Astronomy</div>
+    <div class="category" data-category="Computer">Computer</div>
+    <div class="category" data-category="Biology">Biology</div>
+    <div class="category" data-category="Chemical">Chemical</div>
+</div>
+<div class="products-container">
+    <div class="product" data-category="Agriculture">
+        <img src="image/IMG-20240611-WA0037.jpg" alt="Object 1">
+        <div class="product-name">Object 1</div>
+    </div>
+    <div class="product" data-category="Agriculture">
+        <img src="image/IMG-20240611-WA0039.jpg" alt="Object 2">
+        <div class="product-name">Object 2</div>
+    </div>
+    <div class="product" data-category="Agriculture">
+        <img src="image/IMG-20240611-WA0057.jpg" alt="Object 3">
+        <div class="product-name">Object 3</div>
+    </div>
+    <div class="product" data-category="Agriculture">
+        <img src="image/IMG-20240611-WA0056.jpg" alt="Object 4">
+        <div class="product-name">Object 4</div>
+    </div>
+    <div class="product" data-category="Agriculture">
+        <img src="image/IMG-20240611-WA0057.jpg" alt="Object 5">
+        <div class="product-name">Object 5</div>
+    </div>
+    <div class="product" data-category="Agriculture">
+        <img src="image/IMG-20240611-WA0056.jpg" alt="Object 6">
+        <div class="product-name">Object 6</div>
+    </div>
+    <!-- Add more products with appropriate data-category attributes -->
+</div>
+
+<script>
+    const categories = document.querySelectorAll('.category');
+    const products = document.querySelectorAll('.product');
+
+    categories.forEach(category => {
+        category.addEventListener('click', () => {
+            const categoryType = category.getAttribute('data-category');
+
+            // Hide all products
+            products.forEach(product => {
+                product.style.display = 'none';
+            });
+
+            // Show products that match the selected category
+            products.forEach(product => {
+                if (product.getAttribute('data-category') === categoryType) {
+                    product.style.display = 'block';
+                }
+            });
+        });
+    });
+</script>
+
 <!-- ------------------------------------------------------------------------------------------------ -->
 
 <h2>Our Valuable Clients</h2>
