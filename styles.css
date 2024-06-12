@@ -1,0 +1,189 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1b1c4d; /* Dark blue background */
+    padding: 10px 20px;
+    flex-wrap: wrap;
+}
+
+.navbar img{
+    width: 50px;
+    height: 50px;
+    z-index: 2;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 8px 16px;
+    font-size: 18px;
+}
+
+.navbar .menu {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.navbar .menu a {
+    margin: 0 10px;
+}
+
+.navbar .social-icons {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.navbar .social-icons a {
+    margin: 0 5px;
+}
+
+.navbar .social-icons img {
+    width: 50px;
+    height: 50px;
+    z-index: 2;
+}
+
+.toggle-button {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.toggle-button span {
+    height: 3px;
+    width: 25px;
+    background-color: white;
+    margin: 4px 0;
+    border-radius: 2px;
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: inherit;
+        align-items: flex-start;
+    }
+    .navbar .menu, .navbar .social-icons {
+        width: 100%;
+        justify-content: center;
+        display: none; /* Hidden by default */
+        flex-direction: column;
+        align-items: center;
+    }
+    .navbar .menu a, .navbar .social-icons a {
+        margin: 10px 0;
+    }
+    .toggle-button {
+        display: block;
+    }
+}
+
+@media (max-width: 576px) {
+    .navbar a {
+        font-size: 14px;
+        padding: 4px 8px;
+    }
+    .navbar .social-icons img {
+        width: 20px;
+        height: 20px;
+    }
+}
+
+
+/* ----------------------------------------------------------------------------------------------------- */
+
+
+
+.hero {
+    background: url('image/Backgraound.jpg') no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    position: relative;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+@media (max-width: 768px) {
+    .hero-content h1 {
+        font-size: 2rem;
+    }
+}
+
+
+.hero .hero-content {
+    position: relative;
+}
+
+
+
+
+
+
+
+
+/* ----------------------------------------------------------------------------------------------------- */
+
+.stats-section {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    margin-top: -40vh;
+  
+}
+
+.stat-item {
+    z-index: 1;
+    background-color: #1b1c4d; /* Dark blue background */
+    color: white;
+    text-align: center;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.stat-item h2 {
+    margin: 0;
+    font-size: 36px;
+}
+
+.stat-item p {
+    margin: 10px 0 0;
+    font-size: 18px;
+}
+
+@media (max-width: 768px) {
+    .stat-item h2 {
+        font-size: 24px;
+    }
+    .stat-item p {
+        font-size: 16px;
+    }
+  
+}
+
+@media (max-width: 576px) {
+    .stat-item h2 {
+        font-size: 20px;
+    }
+    .stat-item p {
+        font-size: 14px;
+    }
+  
+}
+
+/* ----------------------------------------------------------------------------------------------------- */
