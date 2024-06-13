@@ -28,7 +28,7 @@
             <span></span>
         </div>
     </div>
-<!-- ---------------------------------------------------------------------------------------- -->
+    <!-- ---------------------------------------------------------------------------------------- -->
     <header class="hero">
         <div class="hero-content">
             <h1>Welcome to Raj Trade Concern</h1>
@@ -53,7 +53,7 @@
             <p>No. Of Clients</p>
         </div>
     </div>
-<!-- ------------------------------------------------------------------------------------------------ -->
+    <!-- ------------------------------------------------------------------------------------------------ -->
     <div class="main-about-container" id="about">
         <div class="about-section">
             <h1>About Us</h1>
@@ -70,7 +70,7 @@
             <h2 id="left">Our Team</h2>
             <p>team detai.</p>
 
-           
+
             <h2 id="left">Why Choose Us?</h2>
             <p>We are committed to delivering the highest quality in everything we do,
                 from our products to our customer service.
@@ -88,97 +88,128 @@
             <div class="social-links">
                 <h2>Follow Us</h2>
                 <a href="#">Facebook</a>
-                <a href="#">Twitter</a> 
+                <a href="#">Twitter</a>
                 <a href="#">Instagram</a>
             </div>
         </div>
     </div>
-<!-- -----------------------------------------------------------------------------------------  --> 
-<h2>Our Products</h2>
-<div class="categories-container">
-    <div class="category" data-category="Agriculture">Agriculture</div>
-    <div class="category" data-category="Physics">Physics</div>
-    <div class="category" data-category="Chemistry">Chemistry</div>
-    <div class="category" data-category="Science">Science</div>
-    <div class="category" data-category="Civil">Civil</div>
-    <div class="category" data-category="Electrical">Electrical</div>
-    <div class="category" data-category="Math">Math</div>
-    <div class="category" data-category="Astronomy">Astronomy</div>
-    <div class="category" data-category="Computer">Computer</div>
-    <div class="category" data-category="Biology">Biology</div>
-    <div class="category" data-category="Chemical">Chemical</div>
-</div>
-<div class="products-container">
-    <div class="product" data-category="Agriculture">
-        <img src="image/IMG-20240611-WA0037.jpg" alt="Object 1">
-        <div class="product-name">Object 1</div>
-    </div>
-    <div class="product" data-category="Agriculture">
-        <img src="image/IMG-20240611-WA0039.jpg" alt="Object 2">
-        <div class="product-name">Object 2</div>
-    </div>
-    <div class="product" data-category="Agriculture">
-        <img src="image/IMG-20240611-WA0057.jpg" alt="Object 3">
-        <div class="product-name">Object 3</div>
-    </div>
-    <div class="product" data-category="Agriculture">
-        <img src="image/IMG-20240611-WA0056.jpg" alt="Object 4">
-        <div class="product-name">Object 4</div>
-    </div>
-    <div class="product" data-category="Agriculture">
-        <img src="image/IMG-20240611-WA0057.jpg" alt="Object 5">
-        <div class="product-name">Object 5</div>
-    </div>
-    <div class="product" data-category="Agriculture">
-        <img src="image/IMG-20240611-WA0056.jpg" alt="Object 6">
-        <div class="product-name">Object 6</div>
-    </div>
-    <!-- Add more products with appropriate data-category attributes -->
-</div>
+    <!-- ----------------------------------------------------------------------------------------------  -->
 
-<script>
-    const categories = document.querySelectorAll('.category');
-    const products = document.querySelectorAll('.product');
 
-    categories.forEach(category => {
-        category.addEventListener('click', () => {
-            const categoryType = category.getAttribute('data-category');
-
-            // Hide all products
-            products.forEach(product => {
-                product.style.display = 'none';
-            });
-
-            // Show products that match the selected category
-            products.forEach(product => {
-                if (product.getAttribute('data-category') === categoryType) {
-                    product.style.display = 'block';
-                }
-            });
-        });
-    });
-</script>
-
-<!-- ------------------------------------------------------------------------------------------------ -->
-
-<h2>Our Valuable Clients</h2>
-<div class="scroll-container">
-    <div class="scroll-content">
-        <img src="image/client 1.jpg" alt="Client 1">
-        <img src="image/client 2.jpg" alt="Client 2">
-        <img src="image/client 3.jpg" alt="Client 3">
-        <img src="image/client 4.jpg" alt="Client 4">
-        <img src="image/client 5.jpg" alt="Client 5">
-        <img src="image/client 6.jpg" alt="Client 6">
-        <img src="image/client 7.jpg" alt="Client 7">
-        <img src="image/client 8.jpg" alt="Client 8">
-        <img src="image/client 9.jpg" alt="Client 9">
-        <img src="image/client 10.jpg" alt="Client 10">
-        <img src="image/client 11.jpg" alt="Client 11">
+    <!-- -----------------------------------------------------------------------------------------  -->
+    <h2>Our Products</h2>
+    <div class="categories-container">
+        <div class="category" data-category="Agriculture">Agriculture</div>
+        <div class="category" data-category="Physics">Physics</div>
+        <div class="category" data-category="Chemistry">Chemistry</div>
+        <div class="category" data-category="Science">Science</div>
+        <div class="category" data-category="Civil">Civil</div>
+        <div class="category" data-category="Electrical">Electrical</div>
+        <div class="category" data-category="Math">Math</div>
+        <div class="category" data-category="Astronomy">Astronomy</div>
+        <div class="category" data-category="Computer">Computer</div>
+        <div class="category" data-category="Biology">Biology</div>
+        <div class="category" data-category="Chemical">Chemical</div>
     </div>
-</div>
-<!-- ------------------------------------------------------------------------------------------------ -->
+    <div class="products-container">
+        <div class="product" data-category="Agriculture">
+            <img src="image/IMG-20240611-WA0037.jpg" alt="Object 1">
+            <div class="product-name">Object 1</div>
+        </div>
+        <div class="product" data-category="Agriculture">
+            <img src="image/IMG-20240611-WA0039.jpg" alt="Object 2">
+            <div class="product-name">Object 2</div>
+        </div>
+        <div class="product" data-category="Agriculture">
+            <img src="image/IMG-20240611-WA0057.jpg" alt="Object 3">
+            <div class="product-name">Object 3</div>
+        </div>
+        <div class="product" data-category="Agriculture">
+            <img src="image/IMG-20240611-WA0056.jpg" alt="Object 4">
+            <div class="product-name">Object 4</div>
+        </div>
+        <div class="product" data-category="Agriculture">
+            <img src="image/IMG-20240611-WA0057.jpg" alt="Object 5">
+            <div class="product-name">Object 5</div>
+        </div>
+        <div class="product" data-category="Agriculture">
+            <img src="image/IMG-20240611-WA0056.jpg" alt="Object 6">
+            <div class="product-name">Object 6</div>
+        </div>
+        <!-- Add more products with appropriate data-category attributes -->
+    </div>
 
+    <script>
+
+    </script>
+
+    <!-- ------------------------------------------------------------------------------------------------ -->
+
+    <h2>Our Valuable Clients</h2>
+    <div class="scroll-container">
+        <div class="scroll-content">
+            <img src="image/client 1.jpg" alt="Client 1">
+            <img src="image/client 2.jpg" alt="Client 2">
+            <img src="image/client 3.jpg" alt="Client 3">
+            <img src="image/client 4.jpg" alt="Client 4">
+            <img src="image/client 5.jpg" alt="Client 5">
+            <img src="image/client 6.jpg" alt="Client 6">
+            <img src="image/client 7.jpg" alt="Client 7">
+            <img src="image/client 8.jpg" alt="Client 8">
+            <img src="image/client 9.jpg" alt="Client 9">
+            <img src="image/client 10.jpg" alt="Client 10">
+            <img src="image/client 11.jpg" alt="Client 11">
+        </div>
+    </div>
+    <!-- ------------------------------------------------------------------------------------------------ -->
+
+
+
+    <!-- ---------------------------------------------------------------------------------------- -->
+
+    <footer class="footer">
+        <div class="column logo">
+            <img src="image/Logo.jpg" alt="Logo">
+        </div>
+
+        <div class="column description">
+            <h2>About us</h2>
+            <p>Raj Trade Concern was established in July 2011 AD with the vision to bring impactful change in the
+                educational pedagogy of Nepal. We are one of the pioneers in the field of science and innovation
+                technology.
+            </p>
+        </div>
+        <div class="column">
+            <h2>Our Stores</h2>
+            <ul>
+                <li><a href="#">About Company</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">Frequently Asked Questions</a></li>
+            </ul>
+        </div>
+        <div class="column">
+            <h2>Useful Links</h2>
+            <ul>
+                <li><a href="#">About Company</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">Frequently Asked Questions</a></li>
+            </ul>
+        </div>
+        <div class="column">
+            <ul>
+                <h2>Raj Trade Concern</h2>
+                <li><a href="#">About Company</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">Frequently Asked Questions</a></li>
+            </ul>
+        </div>
+        <div class="copyright">
+            ©2024 <a href="#" style="color: #03ff21;">Digital Sangalo Pvt. Ltd</a> | All
+            Rights Reserved
+        </div>
+    </footer>
+
+    <!-- ------------------------------------------------------------------------------------------------- -->
     <script src="script.js"></script>
 </body>
 
