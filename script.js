@@ -39,3 +39,12 @@ categories.forEach(category => {
     });
 });
 // ----------------------------- object catogery 
+
+
+// frequency answer
+function toggleFAQ(element) {
+    const faqItem = element.parentNode;
+    faqItem.classList.toggle('active');
+};
+
+// frequency answer

@@ -479,3 +479,80 @@ h2 {
 
 /* -----------------------------------------------------------------------------------  */
 
+
+
+
+/* frequency  */
+
+
+.faq {
+    padding: 20px;
+    text-align: center;
+}
+
+.faq h1 {
+    font-size: 2em;
+    color: #3d9bd9;
+}
+
+.faq-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.faq-item {
+    background: linear-gradient(to right, #4facfe, #00f2fe);
+    border-radius: 5px;
+    margin: 10px;
+    flex: 1 1 calc(50% - 20px);
+    max-width: calc(50% - 20px);
+    min-width: 300px;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.faq-item:hover {
+    transform: scale(1.02);
+}
+
+.faq-question {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.faq-answer {
+    display: none;
+    padding: 15px;
+    border-top: 1px solid #ddd;
+    background-color: #f9f9f9;
+}
+
+.arrow {
+    font-size: 1.5em;
+    transition: transform 0.3s;
+}
+
+.faq-item.active .arrow {
+    transform: rotate(180deg);
+}
+
+.faq-item.active .faq-answer {
+    display: block;
+}
+
+@media (max-width: 768px) {
+    .faq-item {
+        flex: 1 1 100%;
+        max-width: 100%;
+    }
+}
+
+
+/* ---------------------------------------------------------------------------- */
