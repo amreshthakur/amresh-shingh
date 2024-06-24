@@ -559,72 +559,79 @@ h2 {
 
 
 /* ---------------------------------------------------------------------------- */
+
+.main-container {
+    width: 100%;
+    max-width: 1200px;
+    display: inline;
+    flex-wrap: wrap;
+    flex: 1fr 1fr;
+}
+
 .container {
+    background-color: #fff;
+    max-width: 900px;
     width: 100%;
-    height: 100%;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
     display: flex;
-    overflow: hidden; /* Ensures content is clipped to fit the container */
-    animation: scroll 20s linear infinite; 
-    
-}
-.sub-container-1, .sub-container-2{
-    display: flex;
-    width: 200%;
-    height: 200%;
-
-}
-.container img {
-    width: 300px;
-    height: 600px;
-    border-radius: 15px;
+    flex-direction: column;
+    margin: 20px auto;
 }
 
-.content {
-    padding: 0 20px;
+.image img {
     width: 100%;
-    height: 100%;
+    height: auto;
 }
 
-.message-title {
-    color: #1a3e82;
-    font-size: 24px;
-    margin-bottom: 20px;
-    text-align: center;
+.message {
+    padding: 20px;
 }
 
-.message-body {
-    font-size: 16px;
-    width: 100%;
-    line-height: 1.5;
-    text-align: justify;
+.message h1 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #2a4d89;
+}
+
+.message p {
+    margin-bottom: 15px;
+    color: #333;
 }
 
 .signature {
     text-align: right;
     font-weight: bold;
     margin-top: 20px;
+    color: #2a4d89;
 }
 
 @media (min-width: 768px) {
     .container {
         flex-direction: row;
-        align-items: flex-start;
     }
 
-    .container img {
-        margin-bottom: 0;
+    .image,
+    .message {
+        flex: 1;
     }
 
-    .content {
-        padding-left: 20px;
+    .image img {
+        height: 100%;
+        object-fit: cover;
     }
 
-    .message-title {
-        text-align: left;
+    .message {
+        padding: 40px;
     }
 
-    .message-body {
-        text-align: left;
+    .message h1 {
+        font-size: 2rem;
+    }
+
+    .message p {
+        font-size: 1rem;
     }
 }
 
