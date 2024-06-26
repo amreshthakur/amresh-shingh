@@ -18,27 +18,64 @@ const scrollContent = document.querySelector('.scroll-content');
 
 
 // ----------------------------- object catogery 
-const categories = document.querySelectorAll('.category');
-const products = document.querySelectorAll('.product');
+// const categories = document.querySelectorAll('.category');
+// const products = document.querySelectorAll('.products-container');
 
-categories.forEach(category => {
-    category.addEventListener('click', () => {
-        const categoryType = category.getAttribute('data-category');
+// categories.forEach(category => {
+//     category.addEventListener('click', () => {
+//         const categoryType = category.getAttribute('data-category');
 
         // Hide all products
-        products.forEach(product => {
-            product.style.display = 'none';
-        });
+        // products.forEach(product => {
+        //     product.style.display = 'none';
+        // });
 
         // Show products that match the selected category
-        products.forEach(product => {
-            if (product.getAttribute('data-category') === categoryType) {
-                product.style.display = 'block';
+//         products.forEach(product => {
+//             if (product.getAttribute('data-category') === categoryType) {
+//                 product.style.display = 'block';
+//             }
+//         });
+//     });
+// });
+
+
+
+
+document.addEventListener('DOMContentLoaded', function() {
+    const categories = document.querySelectorAll('.category');
+    const productsContainers = document.querySelectorAll('.products-container');
+
+    function showCategory(category) {
+        productsContainers.forEach(container => {
+            if (container.dataset.category === category) {
+                container.style.display = 'flex';
+            } else {
+                container.style.display = 'none';
             }
         });
+
+        categories.forEach(cat => {
+            if (cat.dataset.category === category) {
+                cat.classList.add('active');
+            } else {
+                cat.classList.remove('active');
+            }
+        });
+    }
+
+    categories.forEach(category => {
+        category.addEventListener('click', () => {
+            showCategory(category.dataset.category);
+        });
     });
+
+    // Show the first category by default
+    if (categories.length > 0) {
+        showCategory(categories[0].dataset.category);
+    }
 });
-// ----------------------------- object catogery 
+// ----------------------------- object catogery --------------------------------
 
 
 // frequency answer

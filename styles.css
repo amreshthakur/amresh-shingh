@@ -285,6 +285,9 @@ body {
 }
 
 /* ----------------------------------------------------------------------------------- */
+.image-container{
+    display: none;
+}
 
 .categories-container {
     display: flex;
@@ -307,7 +310,7 @@ body {
 .products-container {
     display: flex;
     overflow-x: auto;
-    white-space: nowrap;
+    white-space: wrap;
     padding: 20px;
 }
 
